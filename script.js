@@ -1,7 +1,3 @@
-
-
-
-
 function Size(){
     const inputValue = document.getElementById('size-input').value
     const inputSpan = document.getElementById('size-span')
@@ -21,4 +17,12 @@ function Size(){
         inputSpan.innerHTML = '7x3м'
     }
     console.log(inputValue, inputSpan)
+}
+
+function ChooseCategory(){
+    let activeEl = document.getElementsByClassName('goods-nav_el-active')
+    for (let i = 0; i <  activeEl.length; i++) {
+        activeEl[i].className = 'goods-nav_el'
+    }
+    event.target.classList.add('goods-nav_el-active')
 }
