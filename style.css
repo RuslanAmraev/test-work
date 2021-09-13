@@ -31,8 +31,18 @@
 	margin-right: 35px;
 }
 
+.header_nav__list_el:hover .list_el_img{
+	display: block;
+}
+
 .header_nav__list_el:last-child{
 	margin-right: 0;
+}
+
+.list_el_img{
+	margin: 3px auto 0 auto;
+	width: 40px;
+	display: none;
 }
 
 .header_nav__contacts{
