@@ -82,9 +82,24 @@
 	color: #163950;
 }
 
-.questions-form_button,
-.cost_block__form_button,
 .main_block__button{
+	background: transparent;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	font-size: 20px;
+	margin-top: 30px;
+	width: 205px;
+	height: 50px;
+	border: none;
+	background-image: url(./images/orange-button.png);
+	background-repeat: no-repeat;
+}
+
+/*Кнопки можно сделать через бэкграунд, потому что не знаю как придать форму как в дизайне*/
+
+.questions-form_button,
+.cost_block__form_button{
 	outline: none;
 	cursor: pointer;
 	font-size: 20px;
@@ -130,8 +145,10 @@
 }
 
 .our-works_carousel{
+	width: 100%;
 	margin-top: 25px;
 	margin-bottom: 65px;
+	overflow: hidden;
 }
 
 .our-works_carousel__wrapper{
@@ -172,6 +189,7 @@
 	background-repeat: no-repeat;
 	padding-top: 90px;;
 	height: 730px;
+	overflow: hidden;
 }
 
 .cost-title-text{
@@ -274,6 +292,7 @@ input[type=range]::-webkit-slider-thumb{
 
 .goods{
 	padding-top: 40px;
+	overflow: hidden;
 }
 
 .goods-nav{
@@ -349,6 +368,7 @@ input[type=range]::-webkit-slider-thumb{
 .gets-block{
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	margin-top: 50px;
 }
 
@@ -413,4 +433,30 @@ input[type=range]::-webkit-slider-thumb{
 	margin: 0 auto;
 	height: 50px;
 	width: 205px;
+}
+
+
+
+@media screen and (max-width: 1901px){
+    .wrap{
+		padding: 0 300px;
+	}
+}
+
+@media screen and (max-width: 1721px){
+    .wrap{
+		padding: 0 200px;
+	}
+}
+
+@media screen and (max-width: 1521px){
+    .wrap{
+		padding: 0 100px;
+	}
+}
+
+@media screen and (max-width: 1321px){
+    .wrap{
+		padding: 0;
+	}
 }
