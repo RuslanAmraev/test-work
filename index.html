@@ -36,7 +36,7 @@
 		<div class="main_block">
 			<h1 class="main_block__title">Строительство бассейнов</h1>
 			<p class="main_block__text">
-				<span>Полный спект работ:</span> от проектирования и сдачи “под ключ” до обслуживания<br> 
+				<span class="g-b">Полный спект работ:</span> от проектирования и сдачи “под ключ” до обслуживания<br> 
 				или реконструкции вашего бассейна, а также большой выбор товаров
 			</p>
 			<button class="main_block__button">Оставить заявку</button>
@@ -48,7 +48,7 @@
 		</h2>
 		<img class="section-title-icon" src="./images/tilda.png" alt="">
 		<div class="our-works_carousel">
-			<div class="our-works_carousel__wrapper">
+			<div id="our-works_carousel__wrapper" class="our-works_carousel__wrapper">
 				<div id="our-work" class="our-works_carousel_line flex">
 					<div class="our-works_carousel_el"><img src="./images/1@1X.png" alt=""></div>
 					<div class="our-works_carousel_el"><img src="./images/2@1X.png" alt=""></div>
@@ -68,8 +68,8 @@
 				</div>
 			</div>
 			<div class="our-works_carousel__button_wrapper">
-				<button onclick='ourWorkSlider("prev")' class="our-works_carousel__button prev">&lt;</button>
-				<button onclick='ourWorkSlider("next")' class="our-works_carousel__button next">></button>
+				<button onclick='ourWorkSlider("prev", "our-works_carousel_el", "our-work", "our-works_carousel__wrapper")' class="our-works_carousel__button">&lt;</button>
+				<button onclick='ourWorkSlider("next", "our-works_carousel_el", "our-work", "our-works_carousel__wrapper")' class="our-works_carousel__button">></button>
 			</div>
 		</div>
 	</section>
@@ -128,23 +128,69 @@
 				<li onclick="ChooseCategory()" class="goods-nav_el">Насосы</li>
 				<li onclick="ChooseCategory()" class="goods-nav_el">Нагреватели</li>
 			</ul>
-			<div class="goods-slider">
-				<div class="goods-slider__slide">
-					<img src="./images/goods-1.png" alt="">
-					<p>Фильтровальная<br> установка Bestway</p>
+			<div id="goods-slider-wrapper" class="goods-slider">
+				<div id="goods-slider" class="goods-slider-line flex">
+					<div class="goods-slider-line-el">
+						<div class="goods-slider__slide">
+							<img src="./images/goods-1.png" alt="">
+							<p>Фильтровальная<br> установка Bestway</p>
+						</div>
+						<div class="goods-slider__slide">
+							<img src="./images/goods-2.png" alt="">
+							<p>Прожектор под плитку с<br> оправой из ABS-пластика</p>
+						</div>
+						<div class="goods-slider__slide">
+							<img src="./images/goods-1.png" alt="">
+							<p>Фильтровальная<br> установка Bestway</p>
+						</div>
+						<div class="goods-slider__slide">
+							<img src="./images/goods-2.png" alt="">
+							<p>Прожектор под плитку с<br> оправой из ABS-пластика</p>
+						</div>
+					</div>
+					<div class="goods-slider-line-el">
+						<div class="goods-slider__slide">
+							<img src="./images/goods-1.png" alt="">
+							<p>Фильтровальная<br> установка Bestway</p>
+						</div>
+						<div class="goods-slider__slide">
+							<img src="./images/goods-2.png" alt="">
+							<p>Прожектор под плитку с<br> оправой из ABS-пластика</p>
+						</div>
+						<div class="goods-slider__slide">
+							<img src="./images/goods-1.png" alt="">
+							<p>Фильтровальная<br> установка Bestway</p>
+						</div>
+						<div class="goods-slider__slide">
+							<img src="./images/goods-2.png" alt="">
+							<p>Прожектор под плитку с<br> оправой из ABS-пластика</p>
+						</div>
+					</div>
+					<div class="goods-slider-line-el">
+						<div class="goods-slider__slide">
+							<img src="./images/goods-1.png" alt="">
+							<p>Фильтровальная<br> установка Bestway</p>
+						</div>
+						<div class="goods-slider__slide">
+							<img src="./images/goods-2.png" alt="">
+							<p>Прожектор под плитку с<br> оправой из ABS-пластика</p>
+						</div>
+						<div class="goods-slider__slide">
+							<img src="./images/goods-1.png" alt="">
+							<p>Фильтровальная<br> установка Bestway</p>
+						</div>
+						<div class="goods-slider__slide">
+							<img src="./images/goods-2.png" alt="">
+							<p>Прожектор под плитку с<br> оправой из ABS-пластика</p>
+						</div>
+					</div>
 				</div>
-				<div class="goods-slider__slide">
-					<img src="./images/goods-2.png" alt="">
-					<p>Прожектор под плитку с<br> оправой из ABS-пластика</p>
-				</div>
-				<div class="goods-slider__slide">
-					<img src="./images/goods-1.png" alt="">
-					<p>Фильтровальная<br> установка Bestway</p>
-				</div>
-				<div class="goods-slider__slide">
-					<img src="./images/goods-2.png" alt="">
-					<p>Прожектор под плитку с<br> оправой из ABS-пластика</p>
-				</div>
+				<button onclick="ourWorkSlider('prev', 'goods-slider__slide', 'goods-slider', 'goods-slider-wrapper')" class="goods-slider__button-prev">
+					&lt;
+				</button>
+				<button onclick="ourWorkSlider('next', 'goods-slider__slide', 'goods-slider', 'goods-slider-wrapper')" class="goods-slider__button-next">
+					>
+				</button>
 			</div>
 			<button class="goods-button">Смотреть все</button>
 	</section>
@@ -192,23 +238,20 @@
 	</section>
 	<section class="map">
 		<div class="map_block">
-			<h3>КОНТАКТЫ</h3>
-			<ul>
-				<li>
-					<img src="" alt="">
-					<p>Казахстан, Алматы, Байзакова, 263, 1 этаж, 5 офис</p>
+			<h3 class="map_block_title">КОНТАКТЫ</h3>
+			<ul class="map_block_list">
+				<li class="map_block_list_el">
+					<img class="map_block_list_el_img" src="./images/map.png" alt="">
+					<p class="map_block_list_el_p">Казахстан, Алматы, Байзакова, 263,<br> 1 этаж, 5 офис</p>
 				</li>
-			</ul>
-			<ul>
-				<li>
-					<img src="" alt="">
-					<p>+7 727 368 83 56, +7 771 964 36 50</p>
+				<li class="map_block_list_el">
+					<img class="map_block_list_el_img" src="./images/telephone.png" alt="">
+					<a href="tel:+77273688356" class="g-b">+7 727 368 83 56, </a>
+					<a href="tel:+77719643650" class="g-b">+7 771 964 36 50</a> 
 				</li>
-			</ul>
-			<ul>
-				<li>
-					<img src="" alt="">
-					<p>imfo@pool.kz</p>
+				<li class="map_block_list_el">
+					<img class="map_block_list_el_img" src="./images/@.png" alt="">
+					<a href="" class="map_block_list_el_p">imfo@pool.kz</a>
 				</li>
 			</ul>
 		</div>

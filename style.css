@@ -1,3 +1,7 @@
+.g-b{
+	font-family: 'Gilroy-Bold';
+}
+
 .flex{
 	display: flex;
 }
@@ -85,11 +89,6 @@
 	margin-top: 25px;
 	font-family: 'Gilroy-Medium';
 	line-height: 22px;
-}
-
-.main_block__text > span{
-	font-family: 'Gilroy-Bold';
-	color: #163950;
 }
 
 .main_block__button{
@@ -184,6 +183,8 @@
 	margin-top: 35px;
 }
 
+.goods-slider__button-prev,
+.goods-slider__button-next,
 .our-works_carousel__button{
 	border-radius: 50%;
 	color: #c4c4c4;
@@ -196,7 +197,9 @@
 	font-size: 20px;
 }
 
-.our-works_carousel__button:hover{
+.our-works_carousel__button:hover,
+.goods-slider__button-prev:hover,
+.goods-slider__button-next:hover{
 	color: #fff;
 	border: 1px solid #27c1de;
 	background-color: #27c1de;
@@ -338,17 +341,32 @@ input[type=range]::-webkit-slider-thumb{
 
 .goods-slider{
 	display: flex;
+	overflow: hidden;
 	justify-content: center;
-	margin-top: 50px;
+	position: relative;
+	width: 1200px;
+    margin: 50px auto 0 auto;
+}
+
+.goods-slider-line{
+	transition: 0.5s;
+	width: 100%;
+	align-items: center;
+}
+
+.goods-slider-line-el{
+	min-width: 100%;
+	display: flex;
+	justify-content: space-around;
 }
 
 .goods-slider__slide{
-	width: 250px;
+	width: 260px;
 	height: 350px;
 	border: 1px solid #d1d1d1;
-	margin: 0 20px;
 	border-radius: 10px;
 	text-align: center;
+	box-sizing: border-box;
 }
 
 .goods-slider__slide > img{
@@ -373,6 +391,23 @@ input[type=range]::-webkit-slider-thumb{
 	border-radius: 10px;
 	display: block;
 	margin: 50px auto 0 auto;
+}
+
+.goods-slider__button-prev,
+.goods-slider__button-next{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	transform: translateY(-50%);
+}
+
+.goods-slider__button-prev{
+	top: 50%;
+	left: -10px;
+}
+.goods-slider__button-next{
+	top: 50%;
+	right: -10px;
 }
 
 .gets{
@@ -459,14 +494,31 @@ input[type=range]::-webkit-slider-thumb{
 }
 
 .map_block{
-	width: 455px;
-	height: 300px;
 	position: absolute;
-	top: 50px;
-    left: 300px;
+	top: 40px;
+    left: 360px;
 	background: #fff;
 	z-index: 2;
 	border-radius: 10px;
+	color: #163950;
+	padding: 50px;
+}
+
+.map_block_title{
+	font-size: 25px;
+	font-family: 'Gilroy-SemiBold';
+	margin-bottom: 50px;
+}
+
+.map_block_list_el{
+	font-size: 18px;
+	font-family: 'Gilroy-Medium';
+	margin-bottom: 20px;
+}
+
+.map_block_list_el_p{
+	display: inline-block;
+	margin: auto 0 auto 5px;
 }
 
 @media screen and (max-width: 1901px){
