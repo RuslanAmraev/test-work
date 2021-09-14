@@ -162,8 +162,17 @@
 }
 
 .our-works_carousel__wrapper{
-	justify-content: center;
+	overflow: hidden;
+	margin: 0 auto;
+	display: inline-block;
+	width: 1445px;
 }
+
+.our-works_carousel_line{
+	transition: 0.5s;
+	width: 100%;
+}
+
 
 .our-works_carousel_el{
 	margin: 0 10px;
@@ -445,7 +454,20 @@ input[type=range]::-webkit-slider-thumb{
 	width: 205px;
 }
 
+.map{
+	position: relative;
+}
 
+.map_block{
+	width: 455px;
+	height: 300px;
+	position: absolute;
+	top: 50px;
+    left: 300px;
+	background: #fff;
+	z-index: 2;
+	border-radius: 10px;
+}
 
 @media screen and (max-width: 1901px){
     .wrap{

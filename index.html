@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="./reset.css">
 	<link rel="stylesheet" href="./fonts.css">
-	<!-- <link rel="stylesheet" href="./swiper-bundle.min.css"> -->
 	<title>pool</title>
 </head>
 <body>
@@ -49,14 +48,28 @@
 		</h2>
 		<img class="section-title-icon" src="./images/tilda.png" alt="">
 		<div class="our-works_carousel">
-			<div class="our-works_carousel__wrapper flex">
-				<div class="our-works_carousel_el"><img src="./images/1@1X.png" alt=""></div>
-				<div class="our-works_carousel_el"><img src="./images/2@1X.png" alt=""></div>
-				<div class="our-works_carousel_el"><img src="./images/3@1X.png" alt=""></div>
+			<div class="our-works_carousel__wrapper">
+				<div id="our-work" class="our-works_carousel_line flex">
+					<div class="our-works_carousel_el"><img src="./images/1@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/2@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/3@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/1@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/2@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/3@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/1@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/2@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/3@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/1@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/2@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/3@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/1@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/2@1X.png" alt=""></div>
+					<div class="our-works_carousel_el"><img src="./images/3@1X.png" alt=""></div>
+				</div>
 			</div>
 			<div class="our-works_carousel__button_wrapper">
-				<button class="our-works_carousel__button prev">&lt;</button>
-				<button class="our-works_carousel__button next">></button>
+				<button onclick='ourWorkSlider("prev")' class="our-works_carousel__button prev">&lt;</button>
+				<button onclick='ourWorkSlider("next")' class="our-works_carousel__button next">></button>
 			</div>
 		</div>
 	</section>
@@ -177,8 +190,30 @@
 			<button class="questions-form_button">Отправить</button>
 		</form>
 	</section>
-	<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4d2d041c390d44dee7907dc953b0e7d00079c1be7e70b57b2ec19f643c94d2f4&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-	<!-- <script type="text/javascript" src="./swiper-bundle.min.js"></script> -->
+	<section class="map">
+		<div class="map_block">
+			<h3>КОНТАКТЫ</h3>
+			<ul>
+				<li>
+					<img src="" alt="">
+					<p>Казахстан, Алматы, Байзакова, 263, 1 этаж, 5 офис</p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<img src="" alt="">
+					<p>+7 727 368 83 56, +7 771 964 36 50</p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<img src="" alt="">
+					<p>imfo@pool.kz</p>
+				</li>
+			</ul>
+		</div>
+		<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4d2d041c390d44dee7907dc953b0e7d00079c1be7e70b57b2ec19f643c94d2f4&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+	</section>
 	<script src="./script.js"></script>
 </body>
 </html>
