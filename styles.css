@@ -91,6 +91,9 @@
     .cost_img{
 		width: 670px;
 	}
+	.main{
+		min-height: 85vh;
+	}
 }
 
 @media screen and (max-width: 769px){
@@ -126,6 +129,9 @@
 	}
 	.our-works_carousel{
 		display: none;
+	}
+	.main{
+		min-height: 60vh;
 	}
 }
 
@@ -211,3 +217,10 @@
 		font-size: 14px;
 	}
 }
+
+@media screen and (max-width: 319px){
+    .questions-form_input{
+		width: 220px;
+	}
+}
+
