@@ -2,7 +2,7 @@
 	background-image: url(../images/gets-bg.png);
 	background-size: cover;
 	padding-top: 135px;
-	height: 400px;
+	min-height: 400px;
 	z-index: 2;
 	position: relative;
 }

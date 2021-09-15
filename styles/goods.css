@@ -54,16 +54,13 @@
 	border-radius: 10px;
 	text-align: center;
 	box-sizing: border-box;
+	font-size: 17px;
+	font-family: 'Gilroy-Medium';
 }
 
 .goods-slider__slide > img{
 	height: 275px;
 	width: 230px;
-}
-
-.goods-slider__slide > p{
-	font-size: 17px;
-	font-family: 'Gilroy-Medium';
 }
 
 .goods-button{

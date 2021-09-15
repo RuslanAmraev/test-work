@@ -28,7 +28,7 @@
 	display: block;
 	margin: 0 auto;
 	height: 40px;
-	width: 310px;
+	max-width: 310px;
 	margin-bottom: 26px;
 	padding-left: 20px;
 	box-sizing: border-box;

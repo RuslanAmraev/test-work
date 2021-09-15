@@ -3,7 +3,7 @@
 	text-align: center;
 	background-image: url(../images/main-bg.png);
 	background-size: cover;
-	height: 100vh;
+	min-height: 100vh;
 	background-repeat: no-repeat;
 }
 

@@ -121,6 +121,12 @@
     .main {
 		height: 70vh;
 	}
+	.our-works_carousel-mobile{
+		display: block;
+	}
+	.our-works_carousel{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 426px){
@@ -159,7 +165,6 @@
     	
 	}
 	.gets{
-		height: 85vh;
 		background: #27c1de;
 		padding-top: 20px;
 		padding-bottom: 20px;
