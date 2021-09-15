@@ -61,6 +61,7 @@
 
 .our-works_carousel-mobile_el{
 	min-width: 100%;
+	overflow: hidden;
 }
 
 .our-works_carousel-mobile__wrapper{
