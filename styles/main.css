@@ -4,6 +4,7 @@
 	background-image: url(../images/main-bg.png);
 	background-size: cover;
 	height: 100vh;
+	background-repeat: no-repeat;
 }
 
 .main_block{
@@ -15,7 +16,6 @@
 	font-size: 33px;
 	font-family: 'Gilroy-Bold';
 	text-transform: uppercase;
-	letter-spacing: 2px;
 }
 
 .main_block__text{

@@ -130,6 +130,9 @@
 	.header_menu_icon{
 		display: block;
 	}
+	.header_nav > *{
+		width: 33%;
+	}
 	.header_logo{
 		display: flex;
 		flex-direction: column;
@@ -152,9 +155,11 @@
 	}
 	.main{
 		background-position-x: -430px;
+		background-size: 350%;
+    	
 	}
 	.gets{
-		height: 80vh;
+		height: 85vh;
 		background: #27c1de;
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -171,9 +176,27 @@
 		padding: 0;
 	}
 	.cost_block__form__el{
-		display: block;
+		flex-direction: column;
+		align-items: center;
 	}
 	.map_block_list_el_img{
 		display: none;
+	}
+	.cost_block__form{
+		width: 100%;
+		border-radius: 0;
+		padding: 20px 0;
+	}
+	.goods-slider{
+		display: none;
+	}
+	.goods-slider-mobile{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 321px){
+    .header_nav__contacts_el{
+		font-size: 14px;
 	}
 }

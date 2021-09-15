@@ -46,6 +46,7 @@
 	justify-content: space-around;
 }
 
+.goods-slider-mobile__slide,
 .goods-slider__slide{
 	width: 260px;
 	height: 350px;
@@ -94,4 +95,18 @@
 .goods-slider__button-next{
 	top: 50%;
 	right: -10px;
+}
+
+.goods-slider-mobile{
+	display: none;
+	position: relative;
+	margin-top: 30px
+}
+
+.goods-slider-mobile-wrapper{
+	overflow: hidden;
+}
+
+.goods-slider-mobile-line{
+	transition: 0.5s;
 }
