@@ -1,0 +1,179 @@
+@import url(./styles/cost.css);
+@import url(./styles/gets.css);
+@import url(./styles/goods.css);
+@import url(./styles/header.css);
+@import url(./styles/main.css);
+@import url(./styles/ourWorks.css);
+@import url(./styles/questions.css);
+@import url(./styles/map.css);
+
+.g-b{
+	font-family: 'Gilroy-Bold';
+}
+
+.flex{
+	display: flex;
+}
+
+.wrap{
+	padding: 0 390px;
+}
+
+/*Кнопки можно сделать через бэкграунд, потому что не знаю как придать форму как в дизайне*/
+
+.questions-form_button,
+.cost_block__form_button{
+	outline: none;
+	cursor: pointer;
+	font-size: 20px;
+	margin-top: 30px;
+	width: 205px;
+	height: 50px;
+	border: none;
+	color: #fff;
+	font-family: 'Gilroy-Medium';
+	background: #f6bf77; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f6bf77 0%, #ee691d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f6bf77 0%,#ee691d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f6bf77 0%,#ee691d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6bf77', endColorstr='#ee691d',GradientType=0 ); /* IE6-9 */
+	-webkit-border-radius: 46px;
+	-webkit-border-bottom-right-radius: 100px;
+	-webkit-border-bottom-left-radius: 100px;
+	-moz-border-radius: 46px;
+	-moz-border-radius-bottomright: 100px;
+	-moz-border-radius-bottomleft: 100px;
+	border-radius: 46px;
+}
+
+.section-title-box{
+	text-align: center;
+}
+
+.section-title{
+	text-transform: uppercase;
+	font-family: 'Gilroy-Bold';
+	font-size: 35px;
+	margin-top: 35px;
+	color: #163950;
+}
+
+.section-title-icon{
+	margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1901px){
+    .wrap{
+		padding: 0 300px;
+	}
+}
+
+@media screen and (max-width: 1721px){
+    .wrap{
+		padding: 0 200px;
+	}
+}
+
+@media screen and (max-width: 1521px){
+    .wrap{
+		padding: 0 100px;
+	}
+}
+
+@media screen and (max-width: 1321px){
+    .wrap{
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 1441px){
+    .cost_img{
+		width: 670px;
+	}
+}
+
+@media screen and (max-width: 1026px){
+    .cost_img{
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 769px){
+    .cost_img{
+		display: none;
+	}
+	.cost_block{
+		margin: 50px auto 0 auto;
+	}
+}
+
+@media screen and (max-width: 426px){
+    .cost_img{
+		display: none;
+	}
+	.cost_block{
+		margin: 50px auto 0 auto;
+	}
+}
+
+@media screen and (max-width: 1026px){
+    .main {
+		height: 70vh;
+	}
+}
+
+@media screen and (max-width: 426px){
+    .header_nav__list{
+		display: none;
+	}
+	.header_menu_icon{
+		display: block;
+	}
+	.header_logo{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 0;
+	}
+	.header_logo > img{
+		display: block;
+		width: 100px;
+		margin: auto 0;
+	}
+	.header_nav__contacts {
+		flex-direction: column;
+		justify-content: center;
+		font-size: 18px;
+		margin-top: 0;
+	}
+	.header_nav__contacts_el:first-child{
+		margin-right: 0;
+	}
+	.main{
+		background-position-x: -430px;
+	}
+	.gets{
+		height: 80vh;
+		background: #27c1de;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-top: 20px;
+	}
+	.gets-block_el{
+		margin-top: 20px;
+	}
+	.map_block{
+		top: 100%;
+		left: 0;
+		width: 100%;
+		border-radius: 0;
+		padding: 0;
+	}
+	.cost_block__form__el{
+		display: block;
+	}
+	.map_block_list_el_img{
+		display: none;
+	}
+}

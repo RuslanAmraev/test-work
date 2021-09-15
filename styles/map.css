@@ -1,0 +1,31 @@
+.map{
+	position: relative;
+}
+
+.map_block{
+	position: absolute;
+	top: 40px;
+    left: 20%;
+	background: #fff;
+	z-index: 2;
+	border-radius: 10px;
+	color: #163950;
+	padding: 50px;
+}
+
+.map_block_title{
+	font-size: 25px;
+	font-family: 'Gilroy-SemiBold';
+	margin-bottom: 50px;
+}
+
+.map_block_list_el{
+	font-size: 18px;
+	font-family: 'Gilroy-Medium';
+	margin-bottom: 20px;
+}
+
+.map_block_list_el_p{
+	display: inline-block;
+	margin: auto 0 auto 5px;
+}

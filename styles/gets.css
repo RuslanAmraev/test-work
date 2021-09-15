@@ -1,0 +1,27 @@
+.gets{
+	background-image: url(../images/gets-bg.png);
+	background-size: cover;
+	padding-top: 135px;
+	height: 400px;
+	z-index: 2;
+	position: relative;
+}
+
+.gets-block{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.gets-block_el{
+	margin: 0 120px;
+	color: #fff;
+	font-size: 23px;
+	font-family: 'Gilroy-SemiBold';
+	text-align: center;
+}
+
+.gets-block_el > p{
+	margin-top: 30px;
+}

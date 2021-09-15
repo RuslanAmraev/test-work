@@ -1,0 +1,40 @@
+.main{
+	align-items: center;
+	text-align: center;
+	background-image: url(../images/main-bg.png);
+	background-size: cover;
+	height: 100vh;
+}
+
+.main_block{
+	padding-top: 185px;
+	color: #163950;
+}
+
+.main_block__title{
+	font-size: 33px;
+	font-family: 'Gilroy-Bold';
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.main_block__text{
+	font-size: 19px;
+	margin-top: 25px;
+	font-family: 'Gilroy-Medium';
+	line-height: 22px;
+}
+
+.main_block__button{
+	background: transparent;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	font-size: 20px;
+	margin-top: 30px;
+	width: 205px;
+	height: 50px;
+	border: none;
+	background-image: url(../images/orange-button.png);
+	background-repeat: no-repeat;
+}

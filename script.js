@@ -46,7 +46,6 @@ function ourWorkSlider(orientation, elSelector, lineSelector, wrapperSelector){
         if(a > 0){
             return
         }
-        console.log('Двигаю на ', a)
         line.style.transform = 'translateX('+ a +'px)'
     }
     if(orientation == 'next'){
@@ -54,7 +53,6 @@ function ourWorkSlider(orientation, elSelector, lineSelector, wrapperSelector){
         if(Math.abs(a) > lineLength - 20){
             return
         }
-        console.log('Двигаю на ', a)
         line.style.transform = 'translateX('+ a +'px)'
     }
 }
